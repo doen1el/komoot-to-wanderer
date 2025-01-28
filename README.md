@@ -53,6 +53,12 @@ services:
 docker compose up -d
 ```
 
+### You can also run the script manually:
+
+```
+docker exec -it komoot-to-wanderer python3 main.py
+```
+
 Due to the request to the nominatim API, the script may take a while to finish. So maybe go for a walk ;)
 
 ## Special Thanks to the following projects:
