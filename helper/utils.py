@@ -19,7 +19,7 @@ def get_location_from_lat_lon(lat, lon):
     response = requests.get(url, headers=headers)
     
     if response.status_code == 200:
-        return response.json().get("address").get("town")
+        return response.json().get('address').get('town')
     else:
         response.raise_for_status()
         
@@ -66,4 +66,4 @@ def map_sport_to_category(komoot_sport):
         "other": "03i1quibm01ixaq"  # Walking
     }
     
-    return komoot_to_wanderer.get(komoot_sport, "03i1quibm01ixaq")  # Default to Walking if not found
+    return komoot_to_wanderer.get(komoot_sport, '03i1quibm01ixaq')  # Default to Walking if not found

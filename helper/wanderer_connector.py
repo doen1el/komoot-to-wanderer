@@ -11,14 +11,14 @@ def login_to_wanderer():
         dict: A dictionary containing the JSON response from the Wanderer API if the login is successful.
     Raises:
         HTTPError: If the response status code is not 200, an HTTPError is raised with the response details.
-    """
+    """   
     json = {
-        "username": os.getenv("WANDERER_EMAIL"),
-        "password": os.getenv("WANDERER_PASSWORD")
+        "username": os.getenv('WANDERER_EMAIL'),
+        "password": os.getenv('WANDERER_PASSWORD')
     }
     
     headers = {}
-    response = requests.post(f"{os.getenv("WANDERER_BASE_URL")}/api/v1/auth/login", json=json, headers=headers)
+    response = requests.post(f"{os.getenv('WANDERER_BASE_URL')}/api/v1/auth/login", json=json, headers=headers)
     if response.status_code == 200:
         return response.json()
     else:

@@ -1,0 +1,13 @@
+services:
+  komoot-to-wanderer:
+    image: komoot-to-wanderer
+    container_name: komoot-to-wanderer
+    restart: unless-stopped
+    environment:
+      - WANDERER_BASE_URL=http://your-wanderer-url
+      - WANDERER_EMAIL=your-wanderer-email
+      - WANDERER_PASSWORD=your-wanderer-password
+      - KOMOOT_EMAIL=your-komoot-email
+      - KOMOOT_PASSWORD=your-komoot-password
+      - POCKETBASE_BASE_URL=your-pocketbase-url
+      - SCHEDULE_TIME=00:30:00 # e.g. every day at 00:30
