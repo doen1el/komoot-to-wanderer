@@ -1,3 +1,7 @@
+## Archived!
+
+Since the developer of [Wanderer](https://github.com/Flomp/wanderer) has implemented a direct way to sync your [Komoot](https://www.komoot.com/) tours with Wanderer, I will no longer maintain this repo!
+
 ## komoot-to-wanderer
 
 A few days ago i discoverd [Wanderer](https://github.com/Flomp/wanderer), a beautiful hiking app that allows you to create and share hiking routes. I wanted to try it out, but i didn't want to create all my routes manually. So i wrote this script to import my routes from [Komoot](https://www.komoot.com/) to Wanderer. Since I couldn't get the implemented API to work, I went the other way and accessed the [Pocketbase](https://github.com/pocketbase/pocketbase) backend directly. It also uploads your recorded GPX tracks and fetches the start location using the [Nominatim](https://github.com/osm-search/Nominatim) API.
